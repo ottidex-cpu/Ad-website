@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wisdom Ads LLC | Lead Generation & Local Advertising in Las Vegas</title>
+  <meta name="description" content="Wisdom Ads LLC helps small businesses in Las Vegas get more leads, customers, and visibility through targeted advertising, Google & social media ads, and local SEO." />
+  <meta name="keywords" content="Las Vegas advertising, lead generation Las Vegas, local SEO Las Vegas, Google ads Las Vegas, small business marketing Las Vegas, Henderson NV advertising" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Wisdom Ads LLC | Las Vegas Local Advertising & Lead Generation" />
+  <meta property="og:description" content="More leads. More customers. More visibility for your Las Vegas small business." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #08080f;
+      --bg2: #0d0d1a;
+      --bg3: #111120;
+      --accent: #8b5cf6;
+      --accent2: #a78bfa;
+      --accent-dim: #1e1040;
+      --border: #1e1e30;
+      --border2: #2a2a40;
+      --text: #e8e8f0;
+      --muted: #666680;
+      --muted2: #44445a;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .logo { font-family: 'Syne', sans-serif; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.1rem 2.5rem;
+      background: rgba(8,8,15,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent2); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      padding: 9px 20px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .nav-cta:hover { background: #7c3aed; transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(139,92,246,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-dim);
+      border: 0.5px solid rgba(139,92,246,0.4);
+      color: var(--accent2);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      letter-spacing: 0.03em;
+    }
+    .badge::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: var(--accent2);
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--white);
+      max-width: 700px;
+      margin: 0 auto 1.25rem;
+      letter-spacing: -0.01em;
+    }
+    .hero h1 em {
+      color: var(--accent2);
+      font-style: normal;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      font-weight: 300;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      padding: 13px 30px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #7c3aed; transform: translateY(-1px); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--muted);
+      border: 0.5px solid var(--border2);
+      border-radius: 8px;
+      padding: 13px 30px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--accent2); color: var(--white); }
+
+    /* ── STATS ── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 2.5rem 0;
+      border: 0.5px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .stat {
+      background: var(--bg2);
+      padding: 2rem;
+      text-align: center;
+      border-right: 0.5px solid var(--border);
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--accent2);
+    }
+    .stat-label { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+    /* ── SECTIONS ── */
+    section { padding: 5rem 2.5rem; }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-sub {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 500px;
+      font-weight: 300;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .service-card {
+      background: var(--bg2);
+      border: 0.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .service-card:hover {
+      border-color: rgba(139,92,246,0.5);
+      transform: translateY(-2px);
+    }
+
+    .service-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent-dim);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    .service-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--accent2);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .service-card p { font-size: 14px; color: var(--muted); line-height: 1.65; }
+
+    /* ── HOW IT WORKS ── */
+    .how-section { background: var(--bg2); border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0;
+      margin-top: 2.5rem;
+      border: 0.5px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .step {
+      padding: 1.75rem;
+      border-right: 0.5px solid var(--border);
+      background: var(--bg3);
+      transition: background 0.2s;
+    }
+    .step:last-child { border-right: none; }
+    .step:hover { background: #13132a; }
+
+    .step-num {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+    .step h4 { font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 6px; }
+    .step p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    /* ── INDUSTRIES ── */
+    .industry-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 2rem;
+    }
+
+    .industry-tag {
+      background: var(--bg2);
+      border: 0.5px solid var(--border);
+      border-radius: 20px;
+      padding: 7px 16px;
+      font-size: 13px;
+      color: var(--muted);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .industry-tag:hover { border-color: var(--accent2); color: var(--accent2); }
+
+    /* ── CTA ── */
+    .cta-section {
+      margin: 0 2.5rem 4rem;
+      background: var(--bg2);
+      border: 0.5px solid var(--border2);
+      border-radius: 16px;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 500px;
+      height: 300px;
+      background: radial-gradient(ellipse, rgba(139,92,246,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-section h2 { font-size: clamp(22px, 3vw, 32px); font-weight: 700; color: var(--white); margin-bottom: 0.75rem; }
+    .cta-section p { font-size: 16px; color: var(--muted); margin-bottom: 2rem; font-weight: 300; }
+    .cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    /* ── CONTACT ── */
+    .contact-section { background: var(--bg2); border-top: 0.5px solid var(--border); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2.5rem; }
+
+    .contact-info p { font-size: 15px; color: var(--muted); margin-bottom: 1.5rem; font-weight: 300; }
+    .contact-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 1rem; }
+    .contact-item-icon { width: 18px; height: 18px; stroke: var(--accent2); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; margin-top: 3px; }
+    .contact-item span { font-size: 14px; color: var(--muted); }
+
+    .contact-form { display: flex; flex-direction: column; gap: 12px; }
+    .contact-form input,
+    .contact-form textarea {
+      background: var(--bg3);
+      border: 0.5px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+      resize: none;
+    }
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder { color: var(--muted2); }
+    .contact-form input:focus,
+    .contact-form textarea:focus { border-color: var(--accent); }
+    .contact-form textarea { height: 100px; }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2rem 2.5rem;
+      border-top: 0.5px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-logo { font-size: 16px; font-weight: 700; color: var(--white); text-decoration: none; }
+    .footer-logo span { color: var(--accent2); }
+    .footer-mid { font-size: 13px; color: var(--muted2); text-align: center; }
+    .footer-right { font-size: 12px; color: var(--muted2); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-links { display: none; }
+      .hero { padding: 4rem 1.25rem 3rem; }
+      .stats { margin: 0 1.25rem; grid-template-columns: 1fr; }
+      .stat { border-right: none; border-bottom: 0.5px solid var(--border); }
+      .stat:last-child { border-bottom: none; }
+      section { padding: 3rem 1.25rem; }
+      .cta-section { margin: 0 1.25rem 3rem; padding: 3rem 1.25rem; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+      footer { flex-direction: column; text-align: center; padding: 2rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">Wisdom<span>Ads</span> LLC</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get started</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="badge">Las Vegas local growth experts</div>
+    <h1>More leads. More customers. More <em>visibility.</em></h1>
+    <p>Wisdom Ads helps small businesses in and around Las Vegas grow fast with targeted advertising, real lead generation, and local SEO that gets you found.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book a free consultation</a>
+      <a href="#services" class="btn-outline">See our services</a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">3x</div>
+      <div class="stat-label">Average lead increase</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">200+</div>
+      <div class="stat-label">Local businesses served</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">48hr</div>
+      <div class="stat-label">Campaign launch time</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-label">What we do</div>
+    <div class="section-title">Everything you need to grow locally</div>
+    <div class="section-sub">We handle the marketing so you can focus on running your business.</div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Lead generation</h3>
+        <p>Qualified leads delivered directly to your business — no cold calling required. We connect you with people already looking for what you offer.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+        </div>
+        <h3>Google & social ads</h3>
+        <p>Targeted ad campaigns on Google, Facebook, and Instagram that convert clicks into real paying customers for your Las Vegas business.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <h3>Local SEO</h3>
+        <p>Get found when Las Vegas customers search for your services — on Google Maps, local listings, and organic search results.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+        </div>
+        <h3>Visibility & analytics</h3>
+        <p>Know exactly where your customers come from with clear, monthly reporting and transparent campaign performance data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section" id="how">
+    <div class="section-label">How it works</div>
+    <div class="section-title">Up and running in days, not months</div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01 — CONSULT</div>
+        <h4>Free strategy call</h4>
+        <p>We learn your business goals, target customers, and local competition in Las Vegas.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02 — BUILD</div>
+        <h4>Custom campaign</h4>
+        <p>We build your ads, optimize your listings, and set up your SEO profile from scratch.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03 — LAUNCH</div>
+        <h4>Go live in 48 hours</h4>
+        <p>Your campaigns go live fast — we handle all the technical setup and creative.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04 — GROW</div>
+        <h4>Track & optimize</h4>
+        <p>We monitor results, tweak what's not working, and scale what brings you leads.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section id="industries">
+    <div class="section-label">Industries we serve</div>
+    <div class="section-title">Built for Las Vegas small businesses</div>
+    <div class="section-sub">From the Strip to Henderson, we work with all types of local businesses.</div>
+    <div class="industry-grid">
+      <div class="industry-tag">Restaurants &amp; food</div>
+      <div class="industry-tag">Contractors &amp; trades</div>
+      <div class="industry-tag">Auto repair</div>
+      <div class="industry-tag">Beauty &amp; salons</div>
+      <div class="industry-tag">Cleaning services</div>
+      <div class="industry-tag">Real estate</div>
+      <div class="industry-tag">Med spas &amp; wellness</div>
+      <div class="industry-tag">Retail shops</div>
+      <div class="industry-tag">Law firms</div>
+      <div class="industry-tag">Dentists &amp; clinics</div>
+      <div class="industry-tag">Event planning</div>
+      <div class="industry-tag">Movers &amp; storage</div>
+      <div class="industry-tag">Landscaping</div>
+      <div class="industry-tag">HVAC &amp; plumbing</div>
+      <div class="industry-tag">Insurance agencies</div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-section">
+    <h2>Ready to grow your business?</h2>
+    <p>Join Las Vegas small businesses already getting more leads with Wisdom Ads LLC.</p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn-primary">Book a free consultation</a>
+      <a href="#services" class="btn-outline">See our services</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-label">Get in touch</div>
+    <div class="section-title">Let's grow your business</div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Ready to start getting more leads and customers? Reach out for a free strategy call — no pressure, no commitment.</p>
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Las Vegas, Nevada &amp; surrounding areas</span>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.85-.85a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16.22v.7z"/></svg>
+          <span>(702) 000-0000</span>
+        </div>
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>hello@wisdomadsllc.com</span>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your name" required />
+        <input type="text" placeholder="Business name" />
+        <input type="email" placeholder="Email address" required />
+        <input type="tel" placeholder="Phone number" />
+        <textarea placeholder="Tell us about your business and what you're looking for..."></textarea>
+        <button type="submit" class="btn-primary" style="width:100%; cursor:pointer;">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="footer-logo">Wisdom<span>Ads</span> LLC</a>
+    <p class="footer-mid">Serving Las Vegas, Henderson, North Las Vegas &amp; surrounding areas</p>
+    <p class="footer-right">&copy; 2026 Wisdom Ads LLC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Message sent!';
+      btn.style.background = '#059669';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = 'Send message';
+        btn.style.background = '';
+        btn.disabled = false;
+        e.target.reset();
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>
